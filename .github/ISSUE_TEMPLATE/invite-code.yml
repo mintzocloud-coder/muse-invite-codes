@@ -1,0 +1,29 @@
+name: "🎟️ Submit invite code"
+description: "Share your Muse invite code with the community"
+title: ""
+labels: ["invite-code"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## How it works
+        1. Put **only your invite code** as the issue title (e.g. `NOCYM9`).
+        2. Your code will appear on the page automatically within a minute.
+        3. Submitting means you share it for free — never ask for payment.
+
+  - type: input
+    id: seats
+    attributes:
+      label: "Seats left (optional)"
+      description: "Roughly how many seats are left on your code?"
+      placeholder: "e.g. ~10 seats left"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: free
+    attributes:
+      label: "Agreement"
+      options:
+        - label: "I share this code for free and will not ask for any payment."
+          required: true

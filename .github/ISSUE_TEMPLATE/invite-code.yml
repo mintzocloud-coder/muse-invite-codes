@@ -1,6 +1,5 @@
 name: "🎟️ Submit invite code"
 description: "Share your Muse invite code with the community"
-title: ""
 labels: ["invite-code"]
 body:
   - type: markdown
